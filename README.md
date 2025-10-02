@@ -32,6 +32,12 @@ src/
 
 ⚙️ Installation & Setup
 
+ Must Have a 404 Page:
+
+<img width="1920" height="944" alt="image" src="https://github.com/user-attachments/assets/61b006ca-6a50-4129-971b-fe89144ced62" />
+
+
+
 Follow these steps to run the project locally:
 
 Clone the repository
