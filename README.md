@@ -1,16 +1,98 @@
-# React + Vite
+🌐 React Router Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a multi-page React.js application built using React Router DOM. It includes multiple routes (Home, Collections, About, Contact) and also demonstrates API data fetching to display dynamic content.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="1905" height="955" alt="image" src="https://github.com/user-attachments/assets/0cdbc977-6663-46e3-a71d-930530ff889c" />
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Features
 
-## Expanding the ESLint configuration
+✅ Multi-Page Routing – Home, Collections, About, Contact
+✅ API Data Fetching – Fetch and display data from external API
+✅ Responsive Design – Mobile-friendly layout
+✅ Error Handling – Custom error page for invalid routes
+✅ Reusable Components – Organized structure with layout and pages
+✅ Clean Code – Easy to understand and extend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📂 Project Structure
+src/
+ ├── Pages/
+ │   ├── Home.jsx           # Home Page
+ │   ├── Collections.jsx    # Collections Page (API Data Display)
+ │   ├── About.jsx          # About Page
+ │   ├── Contact.jsx        # Contact Page
+ │   ├── Layout/
+ │   │    └── AppLayout.jsx # Main Layout (Navbar, Footer, Outlet)
+ │   └── Error/
+ │        └── Error.jsx     # Custom Error Page (404 etc.)
+ ├── App.jsx                # React Router Configuration
+ ├── main.jsx               # React Entry Point
+ └── index.css              # Styling
+
+⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+Clone the repository
+
+git clone https://github.com/your-username/your-repo.git
+
+
+Navigate into the folder
+
+cd your-repo
+
+
+Install dependencies
+
+npm install
+
+
+Start the development server
+
+npm run dev
+
+
+Now open http://localhost:5173
+ in your browser.
+
+🛠️ Tech Stack
+
+⚛️ React.js – UI library
+
+🛣️ React Router DOM – Routing and navigation
+
+🎨 Tailwind CSS (if used) – Styling
+
+🌐 API Fetch – Fetch external data (like OMDB API or any other)
+
+⚡ Vite – Development build tool
+
+🌍 API Integration
+
+This project uses API data fetching to show dynamic content on the Collections page.
+
+Example (OMDb API):
+
+const response = await fetch(URL);
+const data = await response.json();
+
+📸 Screenshots
+
+<img width="1905" height="952" alt="image" src="https://github.com/user-attachments/assets/edc6f22e-e854-4fed-8dab-80f84f5b7254" />
+
+
+🚀 Future Improvements
+
+Add authentication (Login / Signup)
+
+Dark mode support
+
+Backend integration for contact form
+
+More advanced API filtering and search
+
+👨‍💻 Author
+
+Developed by Taha
